@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.left-section {
+  grid-column: span 1;
+  background-color: rgb(16, 16, 27);
+}
+.right-section {
+  grid-column: span 1 / span 2;
+  background-color: rgb(53, 146, 146);
+}
+.edu {
+  display: flex;
+  justify-content: space-between;
+}
+.edu a {
+  cursor: pointer;
+}
+.main-content {
+  display: grid;
+  grid-template-columns: 300px 700px;
+  min-height: 1000px;
+  width: 90%;
+  margin: 20px auto;
+}
+.left-content {
+  padding: 1rem;
+}
+.profile-image {
+  margin: auto;
+  display: block;
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 30%;
+  width: 60%;
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  letter-spacing: 0.02px;
+  margin-top: 9px;
+}
+.designation {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  color: rgb(13, 127, 172);
+}
+.description {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: rgb(189, 181, 235);
+}
+.social-media li {
+  cursor: pointer;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: rgb(200, 196, 212);
+  line-height: 2px;
+}
+.fa-phone-alt {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+.skills {
+  margin-top: 30px;
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color:ghostwhite;
+}
+.skill-name {
+  font-size: 0.65rem;
+  font-weight: 0.65rem;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  color: rgb(204, 247, 243);
+}
+.progress-bar {
+  margin-top: 9px;
+  margin-bottom: 19px;
+  border: 1px solid white;
+  height: 4px;
+  background-color: white;
+}
+.right-main-content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.right-title {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 673px) {
+  .main-content {
+    display: grid;
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.bullet {
+  list-style: disc;
+  font-size: 12pt;
+}
